@@ -1,0 +1,33 @@
+CRITICAL - 2022-02-28 13:05:09 --> Class 'CoodeIgniter\Model' not found
+#0 C:\wamp64\www\desafio-skysolar\api\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\wamp64\www\desafio-skysolar\api\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\d...')
+#2 C:\wamp64\www\desafio-skysolar\api\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Pess...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Pess...')
+#4 C:\wamp64\www\desafio-skysolar\api\app\Controllers\Pessoas.php(14): spl_autoload_call('App\\Models\\Pess...')
+#5 C:\wamp64\www\desafio-skysolar\api\system\CodeIgniter.php(809): App\Controllers\Pessoas->__construct()
+#6 C:\wamp64\www\desafio-skysolar\api\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#7 C:\wamp64\www\desafio-skysolar\api\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\desafio-skysolar\api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-28 13:10:57 --> Class 'CoodeIgniter\Model' not found
+#0 C:\wamp64\www\desafio-skysolar\api\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\wamp64\www\desafio-skysolar\api\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\d...')
+#2 C:\wamp64\www\desafio-skysolar\api\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Pess...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Pess...')
+#4 C:\wamp64\www\desafio-skysolar\api\app\Controllers\Pessoas.php(14): spl_autoload_call('App\\Models\\Pess...')
+#5 C:\wamp64\www\desafio-skysolar\api\system\CodeIgniter.php(809): App\Controllers\Pessoas->__construct()
+#6 C:\wamp64\www\desafio-skysolar\api\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#7 C:\wamp64\www\desafio-skysolar\api\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\desafio-skysolar\api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-28 13:11:01 --> Class 'CoodeIgniter\Model' not found
+#0 C:\wamp64\www\desafio-skysolar\api\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\wamp64\www\desafio-skysolar\api\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\d...')
+#2 C:\wamp64\www\desafio-skysolar\api\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Pess...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Pess...')
+#4 C:\wamp64\www\desafio-skysolar\api\app\Controllers\Pessoas.php(14): spl_autoload_call('App\\Models\\Pess...')
+#5 C:\wamp64\www\desafio-skysolar\api\system\CodeIgniter.php(809): App\Controllers\Pessoas->__construct()
+#6 C:\wamp64\www\desafio-skysolar\api\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#7 C:\wamp64\www\desafio-skysolar\api\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\desafio-skysolar\api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
