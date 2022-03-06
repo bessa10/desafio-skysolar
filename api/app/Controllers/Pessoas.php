@@ -82,32 +82,32 @@ class Pessoas extends ResourceController
                 $dados = (array) $this->request->getJson();
 
                 // pegando os dados que vieram na requisição
-                $newPessoa['nome_completo']     = $dados['nome_completo'];
-                $newPessoa['rg']                = $dados['rg'];
-                $newPessoa['cpf']               = $dados['cpf'];
-                $newPessoa['data_nascimento']   = $dados['data_nascimento'];
-                $newPessoa['cep']               = $dados['cep'];
-                $newPessoa['logradouro']        = $dados['logradouro'];
-                $newPessoa['numero']            = $dados['numero'];
-                $newPessoa['complemento']       = $dados['complemento'];
-                $newPessoa['bairro']            = $dados['bairro'];
-                $newPessoa['cidade']            = $dados['cidade'];
-                $newPessoa['estado']            = $dados['estado'];
+                $newPessoa['nome_completo']     = (isset($dados['nome_completo'])) ? $dados['nome_completo'] : null;
+                $newPessoa['rg']                = (isset($dados['rg'])) ? $dados['rg'] : null;
+                $newPessoa['cpf']               = (isset($dados['cpf'])) ? $dados['cpf'] : null;
+                $newPessoa['data_nascimento']   = (isset($dados['data_nascimento'])) ? $dados['data_nascimento'] : null;
+                $newPessoa['cep']               = (isset($dados['cep'])) ? $dados['cep'] : null;
+                $newPessoa['logradouro']        = (isset($dados['logradouro'])) ? $dados['logradouro'] : null;
+                $newPessoa['numero']            = (isset($dados['numero'])) ? $dados['numero'] : null;
+                $newPessoa['complemento']       = (isset($dados['complemento'])) ? $dados['complemento'] : null;
+                $newPessoa['bairro']            = (isset($dados['bairro'])) ? $dados['bairro'] : null;
+                $newPessoa['cidade']            = (isset($dados['cidade'])) ? $dados['cidade'] : null;
+                $newPessoa['estado']            = (isset($dados['estado'])) ? $dados['estado'] : null;
 
             } else {
 
                 // pegando os dados que vieram na requisição
-                $newPessoa['nome_completo']     = $this->request->getPost('nome_completo');
-                $newPessoa['rg']                = $this->request->getPost('rg');
-                $newPessoa['cpf']               = $this->request->getPost('cpf');
-                $newPessoa['data_nascimento']   = $this->request->getPost('data_nascimento');
-                $newPessoa['cep']               = $this->request->getPost('cep');
-                $newPessoa['logradouro']        = $this->request->getPost('logradouro');
-                $newPessoa['numero']            = $this->request->getPost('numero');
-                $newPessoa['complemento']       = $this->request->getPost('complemento');
-                $newPessoa['bairro']            = $this->request->getPost('bairro');
-                $newPessoa['cidade']            = $this->request->getPost('cidade');
-                $newPessoa['estado']            = $this->request->getPost('estado');
+                $newPessoa['nome_completo']     = ($this->request->getPost('nome_completo')) ? $this->request->getPost('nome_completo') : null;
+                $newPessoa['rg']                = ($this->request->getPost('rg')) ? $this->request->getPost('rg') : null;
+                $newPessoa['cpf']               = ($this->request->getPost('cpf')) ? $this->request->getPost('cpf') : null;
+                $newPessoa['data_nascimento']   = ($this->request->getPost('data_nascimento')) ? $this->request->getPost('data_nascimento') : null;
+                $newPessoa['cep']               = ($this->request->getPost('cep')) ? $this->request->getPost('cep') : null;
+                $newPessoa['logradouro']        = ($this->request->getPost('logradouro')) ? $this->request->getPost('logradouro') : null;
+                $newPessoa['numero']            = ($this->request->getPost('numero')) ? $this->request->getPost('numero') : null;
+                $newPessoa['complemento']       = ($this->request->getPost('complemento')) ? $this->request->getPost('complemento') : null;
+                $newPessoa['bairro']            = ($this->request->getPost('bairro')) ? $this->request->getPost('bairro') : null;
+                $newPessoa['cidade']            = ($this->request->getPost('cidade')) ? $this->request->getPost('cidade') : null;
+                $newPessoa['estado']            = ($this->request->getPost('estado')) ? $this->request->getPost('estado') : null;
             }
 
             try {

@@ -1,0 +1,11 @@
+api/writable/debugbar/*
+api/writable/logs/*
+api/writable/session/*
+api/writable/uploads/*
+api/writable/cache/*
+
+cadastro/writable/debugbar/*
+cadastro/writable/logs/*
+cadastro/writable/session/*
+cadastro/writable/uploads/*
+cadastro/writable/cache/*
