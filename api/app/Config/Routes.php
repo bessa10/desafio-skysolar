@@ -33,6 +33,15 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+$routes->set404Override(function ()
+{   
+    $response['response']   = 'error';
+    $response['msg']        = 'Página não encontrada';
+
+    echo json_encode($response);
+
+});
+
 // Pessoas REST
 
 $routes->get('pessoas', 'Pessoas::list');

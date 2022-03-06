@@ -6,6 +6,13 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+        echo '<h1>API desafio Sky Solar</h1>';
+
+    }
+
+    public function page_not_found()
+    {
+        echo 'Método não encontrado';
+
     }
 }

@@ -1,3 +1,19 @@
+# Instalação e configuração
+
+O arquivo principal de configuração está na raiz de cada projeto
+
+api/.env
+cadastro/.env
+
+Caso estiver usando virtual host no servidor, precisa alterar a base url
+
+Arquivo do banco de dados está na pasta desafio-skysolar/sql/database.sql
+
+As configurações de host, username, password e database estão no arquivo .env
+
+Caso quiser testar a api usando o postman, estou deixando a collection na raiz
+
+
 # Desafio Programador Sky Solar
 
 Este desafio consiste no desenvolvimento de um pequeno sistema para demonstrar seus conhecimentos na linguagem PHP.

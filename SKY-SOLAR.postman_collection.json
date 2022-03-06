@@ -1,0 +1,346 @@
+{
+	"info": {
+		"_postman_id": "4f635ef2-fbe5-4b7b-92f6-4578db976e5a",
+		"name": "SKY-SOLAR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar pessoas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "123456qwert",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/desafio-skysolar/api/public/pessoas/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"desafio-skysolar",
+						"api",
+						"public",
+						"pessoas",
+						"list"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "123456qwert",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dados pessoa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "123456qwert",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/desafio-skysolar/api/public/pessoas/find/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"desafio-skysolar",
+						"api",
+						"public",
+						"pessoas",
+						"find",
+						"2"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "123456qwert",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar pessoa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "123456qwert",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome_completo",
+							"value": "Andressa Soares Carvalho",
+							"type": "text"
+						},
+						{
+							"key": "rg",
+							"value": "1234567",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "12345656789",
+							"type": "text"
+						},
+						{
+							"key": "data_nascimento",
+							"value": "1992-01-10",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "02991-070",
+							"type": "text"
+						},
+						{
+							"key": "logradouro",
+							"value": "Rua Morro de Santa Marta",
+							"type": "text"
+						},
+						{
+							"key": "numero",
+							"value": "49",
+							"type": "text"
+						},
+						{
+							"key": "complemento",
+							"value": "CS 3",
+							"type": "text"
+						},
+						{
+							"key": "bairro",
+							"value": "Jardim Rincão",
+							"type": "text"
+						},
+						{
+							"key": "cidade",
+							"value": "São Paulo",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "SP",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/desafio-skysolar/api/public/pessoas/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"desafio-skysolar",
+						"api",
+						"public",
+						"pessoas",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar pessoa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "123456qwert",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome_completo",
+							"value": "Andressa Soares",
+							"type": "text"
+						},
+						{
+							"key": "rg",
+							"value": "1234568",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "12345656788",
+							"type": "text"
+						},
+						{
+							"key": "data_nascimento",
+							"value": "1992-01-10",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "02991-070",
+							"type": "text"
+						},
+						{
+							"key": "logradouro",
+							"value": "Rua Morro de Santa",
+							"type": "text"
+						},
+						{
+							"key": "numero",
+							"value": "49",
+							"type": "text"
+						},
+						{
+							"key": "complemento",
+							"value": "CS 3",
+							"type": "text"
+						},
+						{
+							"key": "bairro",
+							"value": "Jardim Rincão",
+							"type": "text"
+						},
+						{
+							"key": "cidade",
+							"value": "São Paulo",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "SP",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/desafio-skysolar/api/public/pessoas/update/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"desafio-skysolar",
+						"api",
+						"public",
+						"pessoas",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar pessoa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "123456qwert",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome_completo",
+							"value": "Andressa Soares",
+							"type": "text"
+						},
+						{
+							"key": "rg",
+							"value": "1234568",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "12345656788",
+							"type": "text"
+						},
+						{
+							"key": "data_nascimento",
+							"value": "1992-01-10",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "02991-070",
+							"type": "text"
+						},
+						{
+							"key": "logradouro",
+							"value": "Rua Morro de Santa",
+							"type": "text"
+						},
+						{
+							"key": "numero",
+							"value": "49",
+							"type": "text"
+						},
+						{
+							"key": "complemento",
+							"value": "CS 3",
+							"type": "text"
+						},
+						{
+							"key": "bairro",
+							"value": "Jardim Rincão",
+							"type": "text"
+						},
+						{
+							"key": "cidade",
+							"value": "São Paulo",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "SP",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/desafio-skysolar/api/public/pessoas/update/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"desafio-skysolar",
+						"api",
+						"public",
+						"pessoas",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
